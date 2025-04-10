@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Criminal">
+
+    <Button
+        android:id="@+id/newButton"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#090909"
+        android:text="Submit"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/reportView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="List of Previous Convictions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="161dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="1. Have you ever been found guilty of any administrative offense? "
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportView" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="161dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="2. Have you been criminally charged before any court? "
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="161dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:text="a. Are you a member of any indigenous group?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="161dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="c. Are you a solo parent?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="161dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="b. Are you a person with disability?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="165dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="3. Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by any court or tribunal?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="356dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:text="4. Pursuant to: (a) Indigenous People's Act (RA 8371): (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972), please answer the following items:"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <CheckBox
+        android:id="@+id/q1Yes"
+        android:layout_width="77dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/q1No"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/q3Yes"
+        android:layout_width="77dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/q3No"
+        app:layout_constraintTop_toBottomOf="@+id/q2Details" />
+
+    <CheckBox
+        android:id="@+id/q2Yes"
+        android:layout_width="77dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/q2No"
+        app:layout_constraintTop_toBottomOf="@+id/q1Details" />
+
+    <CheckBox
+        android:id="@+id/q1No"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/q3No"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q2Details" />
+
+    <CheckBox
+        android:id="@+id/q2No"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q1Details" />
+
+    <EditText
+        android:id="@+id/q1Details"
+        android:layout_width="166dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="if YES, give details.."
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q1Yes" />
+
+    <EditText
+        android:id="@+id/q2Details"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="if YES, give details.."
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q1Details" />
+
+    <EditText
+        android:id="@+id/q3Details"
+        android:layout_width="164dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="if YES, give details.."
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q2Details" />
+
+    <EditText
+        android:id="@+id/q4cDetails"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="if YES, give details.."
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <CheckBox
+        android:id="@+id/q4aYes"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/q4aNo"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <CheckBox
+        android:id="@+id/q4aNo"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <CheckBox
+        android:id="@+id/q4bNo"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="30dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q4aDetails" />
+
+    <CheckBox
+        android:id="@+id/q4cYes"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/q4cNo"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <EditText
+        android:id="@+id/q4bDetails"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="if YES, give details.."
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="489dp" />
+
+    <EditText
+        android:id="@+id/q4aDetails"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="if YES, give details.."
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q4aYes" />
+
+    <CheckBox
+        android:id="@+id/q4bYes"
+        android:layout_width="73dp"
+        android:layout_height="20dp"
+        android:text="Yes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/q4bNo"
+        app:layout_constraintTop_toBottomOf="@+id/q4aDetails" />
+
+    <CheckBox
+        android:id="@+id/q4cNo"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="30dp"
+        android:text="No"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q4bDetails" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

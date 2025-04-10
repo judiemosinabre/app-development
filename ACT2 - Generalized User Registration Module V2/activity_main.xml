@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Name:"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Personal Background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Name:"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Email:"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="114dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:hint="First Name:"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/middleName"
+        android:layout_width="126dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:hint="Middle Name:"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/firstName"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="114dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="Surname:"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Gender"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Civil Status"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Emergency Contact"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Phone"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Height"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:text="Pagibig No.:"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgCivilStatus" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Philhealth:"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Contact:"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="56dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Relationship:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/relationship"
+        app:layout_constraintTop_toBottomOf="@+id/emergencyName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIN No.:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/tin"
+        app:layout_constraintTop_toBottomOf="@+id/rgCivilStatus" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="GSIS No.:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/gsis"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:text="Weight"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="167dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="kg"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="163dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:hint="m"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="238dp"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/rgMale"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:text="Male"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/rgFemale"
+            android:layout_width="95dp"
+            android:layout_height="25dp"
+            android:text="Female"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/rgLGBTQ"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="LGBTQ"
+            android:textSize="8sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="354dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:hint="sample@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <RadioGroup
+        android:id="@+id/rgCivilStatus"
+        android:layout_width="356dp"
+        android:layout_height="39dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Single"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="71dp"
+            android:layout_height="29dp"
+            android:text="Married"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="79dp"
+            android:layout_height="28dp"
+            android:text="Separated"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="76dp"
+            android:layout_height="28dp"
+            android:text="Widowed"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:text="Others"
+            android:textSize="8sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/pagibig"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/rgCivilStatus" />
+
+    <EditText
+        android:id="@+id/philhealth"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/pagibig" />
+
+    <EditText
+        android:id="@+id/emergencyContact"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/emergencyName" />
+
+    <EditText
+        android:id="@+id/tin"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgCivilStatus" />
+
+    <EditText
+        android:id="@+id/gsis"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tin" />
+
+    <EditText
+        android:id="@+id/emergencyName"
+        android:layout_width="315dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/relationship"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emergencyName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="93dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#121212"
+        android:text="Next"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emergencyContact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
