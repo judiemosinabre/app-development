@@ -7,6 +7,7 @@ It's organized by lesson and includes functional Java code for managing student-
 - `L(#)`: **Lesson Projects**
 - `AT(#)`: **Attendance Codes**
 - `ACT(#)`: **Activities** — More comprehensive than `AT`, often with multiple screens or validations.
+- `SP(#)`: **Special Project** — Activities that combine and apply all previously covered lessons and concepts.
 
 ---
 
@@ -26,7 +27,10 @@ It's organized by lesson and includes functional Java code for managing student-
 ### Activities (ACT)
 - [x] **ACT1** – Generalized User Registration Module (3 Classes for User Registration)  
 - [x] **ACT2** – Generalized User Registration Module V2 (with Radio Group and Radio Button)  
-- [x] **ACT3** – Generalized User Registration Module V3 (with Camera and Image View)  
+- [x] **ACT3** – Generalized User Registration Module V3 (with Camera and Image View)
+
+### Special Project [Midterms / Finals (SP)]
+- [x] **Event Feedback Evaluation** - Consists of ImageView, Spinner, Checkbox, RadioGroup and Buttons, Intent, and Bundles
 
 ---
 
